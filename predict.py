@@ -1,5 +1,5 @@
 import joblib
-from rules import weather_condition
+from rules import weather_prediction
 
 # Load trained models
 temp_model = joblib.load("temp_model.pkl")
@@ -16,7 +16,7 @@ X_input = [[humidity, wind_speed, pressure]]
 pred_temp = temp_model.predict(X_input)[0]
 pred_rain = rain_model.predict(X_input)[0]
 
-condition = weather_condition(pred_temp, humidity, pred_rain)
+condition = weather_prediction(pred_temp, humidity, pred_rain)
 
 # Output
 print("Weather Prediction Result")

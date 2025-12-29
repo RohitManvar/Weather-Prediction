@@ -5,9 +5,9 @@ import joblib
 #Load Data
 data = pd.read_csv("weather.csv")
 
-x = data["humidity","wind_speed","pressure"]
-y_temp = data["temperature"]
-y_rain = data["rain"]
+x = data[['humidity', 'wind_speed', 'pressure']]
+y_temp = data['temperature']
+y_rain = data['rain']
 
 #Temperature Regression Model
 temp_model = LinearRegression()
