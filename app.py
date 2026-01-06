@@ -50,12 +50,12 @@ input {
     background-color: #112240;
     border-radius: 12px;
     padding: 15px;
-    color: white;
+    color: #112240;
     box-shadow: 0px 4px 15px rgba(0,0,0,0.4);
 }
 
 section[data-testid="stSidebar"] {
-    background-color: #0b1c2d;
+    background-color: #e9edf2;
 }
 </style>
 """, unsafe_allow_html=True)
